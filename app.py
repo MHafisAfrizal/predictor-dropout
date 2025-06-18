@@ -8,7 +8,7 @@ st.set_page_config(page_title='Dropout Probability Predictor', layout='wide')
 
 # Load model
 @st.cache_resource
-def load_model(path='./model/model.pkl'):
+def load_model(path='model.pkl'):
     return joblib.load(path)
 
 model = load_model()
